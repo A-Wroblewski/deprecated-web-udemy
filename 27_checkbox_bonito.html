@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            span{
+                display: inline-block;
+                background-color: #ccc;
+                width: 60px;
+                height: 30px;
+                border-radius: 15px;
+                position: relative;
+            }
+
+            span::after{
+                content: "";
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                margin: 5px;
+                background-color: rgb(238, 238, 238);
+                display: block;
+                position: absolute;
+                transition: all .5s;
+            }
+
+            input:checked + span:after{
+                transform: translateX(30px);
+                background-color: red;
+            }
+
+            input{
+                width: 0;
+                overflow: hidden;
+            }
+
+            label input:focus + span{
+                box-shadow: 0 0 0 2px #999;
+            }
+        </style>
+    </head>
+    <body>
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Esporte
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Política
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Educação
+        </label>
+    </body>
+</html>

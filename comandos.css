@@ -1,0 +1,297 @@
+/*
+
+Site recomendado para referências -> css-tricks.com.
+
+margin; define a distância da margem entre o que foi selecionado e a borda.
+    margin: auto; centraliza na horizontal.
+
+width; largura.
+max-width; largura dentro da largura da própria imagem.
+
+height; altura.
+
+font-family; define a fonte da escrita.
+
+list-style-type; define os formatos ou letras e números nas listas.
+
+text-decoration; sublinha e faz coisas do tipo nos textos.
+
+color; define a cor.
+
+background-color; define a cor de fundo.
+background-color;
+    rgb(0,0,0)|rgba(0,0,0,0); muda as cores|muda com opacidade.
+    hsl(deg, %, %)|hsla(deg, %, %, 0); igual rgb, porém mais preciso.
+background-clip; controla a cor de fundo dentro de tal elemento.
+    border-box; padrão.
+    content-box; deixa a cor somente no fundo do conteúdo.
+    padding-box; caso tenha uma borda, ela é ignorada e a cor não a sobrepõe.
+
+text-transform; faz mudanças no texto, como maiúsculo e minúsculo.
+
+background-image: url(); coloca uma imagem.
+    linear-gradient(); também funciona como imagem.
+        valores: (to top, to bottom left e afins|em graus(90deg), cor(es) controlada(s) em pixel ou porcentagem.
+        exemplo: , red 100px/30%(começará o gradiente a partir desse valor), red 250px/40%(terminará nesse valor).
+    repeating-linear-gradient(); mesma coisa porém repete.
+        exemplo: (red 0%, yellow 10%, blue 30%) irá repetir até os 100%.
+    radial-gradient(); gradiente circular.
+        valores: (closest-corner, closest-side, farthest-corner ou farthest-side(porcentagem)|to top, to bottom left e afins|em graus(deg)
+
+background-attachment; juntar com background-image.
+    scroll; acompanha a página.
+    fixed; fica fixado na parte desejada.
+
+line-height; distância entre as linhas.
+
+!important; sobrescreve todo conteúdo possível e o deixa prevalecendo. Usar somente em casos extremos.
+
+tag:hover; passar o mouse por cima.
+
+tag:active; durante a ação do clique, geralmente em links.
+
+a:visited; após entrar no link.
+
+background-image: url(../lugar/arquivo);
+    .. retorna pra pasta anterior.
+
+display; muda o comportamento dos elementos.
+    inline-block; funciona como bloco porém fica na linha.
+    block; converte o elemento em bloco.
+
+visibility; altera a visibilidade sem remover da página.
+
+letter-spacing; espaço entre as letras.
+
+box-sizing: border-box; coloca os valores de width e height como finais, sem aumentar por causa do padding.
+
+float; encaixa os elementos abaixo dele nele mesmo.
+
+clear: right/left/both; ignora o float do elemento anterior.
+
+position; mexe na posição de tal elemento.
+    static; padrão.
+    fixed; se fixa em relação a janela do navegador.
+    relative; se fixa em relação ao elemento anterior.
+    absolute; mesma coisa, porém se não tiver nenhum outro position ele se fixa na janela do navegador.
+
+transition; faz uma animação de transição.
+    termo e tempo(color 0.5s).
+
+overflow; faz alterações de acordo com o espaço ocupado.
+    visible; padrão.
+    hidden; esconde todo o conteúdo que ultrapassar o limite.
+    scroll; coloca barras de rolagem no lado e embaixo.
+    auto; coloca barra de rolagem apenas se precisar.
+
+border-collapse; funciona para tabelas.
+    separate; padrão.
+    collapse; remove os espaços entre os dados.
+
+tag:focus; muda somente quando tal elemento está focado, por exemplo login.
+
+resize; bloqueia o redimensionamento.
+
+border-radius; controla as bordas de determinado elemento.
+    pode ser definido em porcentagem ou pixel.
+    os eixos x e y podem ser controlados individualmente usando /.
+
+box-shadow; controla o sombreamento de determinado elemento.
+    valores: eixos x e y, esfumaçamento, valor opcional de tamanho e cor.
+    podem ser inseridas várias sombras no mesmo box-shadow separadas por vírgula.
+
+text-shadow; coloca sombreamento no texto.
+    valores: eixos x e y, esfumaçamento e cor.
+    podem ser inseridas várias sombras no mesmo text-shadow separadas por vírgula.
+
+FONTES -> site recomendado fontsquirrel.com.
+
+@font-face; permite o uso de fontes customizadas.
+    declarar um font-family: ''; com o nome da sua fonte.
+    src: url(); link da fonte.
+        para adicionar mais arquivos de fonte para suporte extendido...
+            primeiro src: url();
+            segundo src: url(exemplo.svg) format('svg'), url() format('')...;
+        após isso, colocar o nome da fonte no font-family do elemento desejado.
+
+TRANSIÇÕES -> recomendado cubic-bezier.com.
+
+transition-property; determina o elemento a ser animado.
+    exemplo: width, height ou all;
+transition-duration; duração da animação.
+    exemplo: 1.5s, 2s; ou apenas um valor para todos.
+transition-timing-function: cubic-bezier(); controla a intensidade da animação.
+transition-delay; demora para a animação acontecer.
+    exemplo: 0s, 0.5s; ou apenas um valor para todos.
+atalho -> transition: property duration timing-function delay;
+
+@keyframes nome{
+    0% ou from{
+        estilo;
+    }
+    100% ou to{
+        estilo;
+    }
+}
+    podem ser usadas várias quantidades de porcentagem.
+
+animation-name; nome da animação que será executada.
+animation-duration; duração da animação.
+animation-timing-function: cubic-bezier(); controla a intensidade da animação.
+animation-delay; delay da animação.
+animation-iteration-count; quantidade de vezes que a animação vai rodar.
+animation-direction; direção da animação.
+    normal; padrão.
+    reverse; invertida.
+    alternate; primeiro ocorre normalmente, depois vai de trás para frente.
+    alternate-reverse; começa de trás para frente e depois normalmente.
+animation-fill-mode; define se os elementos continuarão com o estilo da keyframe ou não.
+    none; padrão.
+    backwards; mantém o estilo antes de começar a animação, depois reseta.
+    forwards; mantém o estilo depois de acabar a animaçãoe o mantém.
+    both; mantém tudo.
+animation-play-state; define quando a animação ocorrerá ou não.
+animation-
+    atalho -> animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+will-change; é usado para informar o navegador que uma animação irá ocorrer, assim reduzinho engasgos. Não utilizar demais.
+
+tag:first-child|last-child|nth-child(numero|odd|even); seleciona o filho específico de um elemento.
+
+tag > tag{}; filho direto de tal tag.
+
+tag + tag{}; pega a tag imediatamente após tal tag.
+
+tag ~ tag{}; pega todos os elementos imediatamente após tal tag.
+
+tag[atributo]{}
+    exemplo: [title|alt=""]{}; pega somente os elementos que possuem tal atributo.
+
+tag[atributo^="valor"]{}
+    exemplo: [href^="http"]; pega somente os elementos que começam com http.
+
+tag[atributo$="valor"]{}
+    exemplo: [src$=".png"]; pega somente os elementos que terminam com .png.
+
+tag[atributo*="valor"]{}
+    exemplo: [href*="pepino"]; pega somente os elementos que possuem pepino.
+
+:not(); seleciona somente os elementos que não possuem tal coisa.
+    exemplos: :not(a){}
+                seleciona todo elemento que não é link.
+             p:not(.sabonete){}
+                seleciona todo paragráfo que não tem a classe sabonete.
+             img:not([alt]){display: none;}
+                seleciona toda imagem que não tem atributo alt. O display: none serve para forçar o dev a colocar o atributo alt, caso contrário a imagem não aparecerá na página.
+
+tag::before; insere conteúdo antes de determinado elemento. Necessário a tag content: ""; mesmo que vazia.
+
+tag::after; insere conteúdo depois de determinado elemento. Necessário a tag content: ""; mesmo que vazia.
+
+tag::first-letter; seleciona a primeira letra.
+
+tag::first-line; seleciona a primeira linha.
+
+tag::selection; modifica o conteúdo quando tal parte é selecionada arrastando com o mouse.
+
+tag::-moz-atributo; faz funcionar no firefox.
+
+transform; transfomar determinado elemento.
+    translate(); define o quanto o elemento se move nas direções X e Y, podendo também serem controlados individualmente(exemplo: transformX() ou transformY()).
+    rotate(); rotaciona tal elemento em graus(deg).
+    skew(); define a distorção de tal elemento nas direções X e Y, também podendo controlá-las individualmente.
+    scale(); define a escala de tal elemento nas direções X e Y, também tendo controle individual.
+
+transform-origin; pode ser usado em conjunto com o rotate() para mudar o eixo usado na rotação.
+    exemplo: transform-origin: left|right bottom|top.
+
+attr(); mostra o elemento no parênteses.
+    exemplo: content: "("attr(href)")"; printa na tela o elemento href.
+
+@media; faz alterações no código dependendo do dispositivo.
+    exemplo: @media screen;
+    adicionar and com (por exemplo)(min-width: px); pega a largura mínima do dispositivo e junta com o tipo de media.
+    exemplo completo: @media screen and (min-width 600px);
+
+calc(); faz equações matemáticas.
+    exemplo: width: calc(50% - 20px);
+
+CÁLCULO DE EM -> divir o valor desejado pelo contexto atual.
+    Por exemplo: valor desejado = 22px e contexto atual = 16px... 22 / 16 = 1.375em.
+    Também pode ser usado nas media queries.
+
+medida rem; root em. Fica ligada ao tamanho da fonte raiz, geralmente da tag html.
+medida vw; viewport width. É relacionada à largura da tela.
+medida vh; viewport height. É relacionada à altura da tela.
+
+counter-reset; declara o nome de um contador.
+counter-increment; incrementa o nome do contador dado no counter-reset.
+    para exibir o contador na página pode-se usar, por exemplo, ::before{content: counter(nome do contador)}
+
+display: flex; transforma tal elemento em flex.
+    flex-direction; muda a direção do elemento.
+        row; padrão.
+        row-reverse; inverte.
+        column; o eixo acompanha o eixo do bloco.
+        column-reverse; inverte.
+    flex-wrap; define se os elementos quebram de linha ao reduzir o espaço.
+        nowrap; padrão.
+        wrap; quando não couber na tela haverá quebra de linha.
+        wrap-reverse; inverte.
+    flex-flow; é a junção de flex-direction e flex-wrap.
+    justify-content; alinha no eixo principal.
+        flex-start; deixa no começo.
+        center; centraliza.
+        space-between; pega o espaço que sobra e coloca entre os elementos.
+        space-around; pega o espaço que sobra e coloca ao redor dos elementos.
+    align-items; alinha no eixo cruzado. Funciona apenas com flex-wrap: nowrap.
+        center; centraliza.
+        flex-start; coloca no começo.
+        flex-end; coloca no final.
+        stretch; estica os elementos.
+        baseline; cria uma linha imaginária no texto e alinha a partir dela.
+    align-content; funciona apenas quando há quebra de linha e com flex-wrap: wrap.
+        flex-start; deixa no começo.
+        center; centraliza.
+        space-between; pega o espaço que sobra e coloca entre os elementos.
+        space-around; pega o espaço que sobra e coloca ao redor dos elementos.
+    flex-basis; muda a largura ou a altura dos elementos dependendo do eixo.
+    flex-grow; aumenta o tamanho de determinado elemento.
+    flex-shrink; encolhe o tamanho de determinado elemento.
+    flex; junção de flex-grow, shrink e basis(nessa ordem).
+    align-self; alinha um elemento de acordo com ele mesmo.
+        flex-start; flex-end; center; stretch;
+    order; troca a ordem de tal elemento.
+
+ARRUMAR CÓDIGO PARA SUPORTE DE NAVEGADORES ANTIGOS -> autoprefixer
+
+display: grid; transforma tal elemento em grid.
+    grid-template-columns; ajusta o tamanho das colunas.
+        exemplo: grid-template-columns: 100px 100px 100px; Essa grid terá 3 colunas com 100px cada.
+                 grid-template-columns: repeat(3, 100px); Mesma coisa.
+    grid-template-rows; ajusta o tamanho das linhas.
+        exemplo: grid-template-rows: 100px 100px; Terá duas linhas com 100px cada.
+    grid-row-gap; cria um vão entre as linhas.
+    grid-column-gap; cria um vão entre as colunas.
+    grid-gap; atalho pro row-gap e column-gap;
+        exemplo: grid-gap: 20px 20px; 20px de vão nas linhas e nas colunas.
+    medida fr; parecido com o flex-grow. Ajusta o conteúdo dentro da grid.
+    grid-row-start; Determina onde o elemento começa na grid a partir das linhas imaginárias.
+    grid-row-end; Determina onde o elemento termina na grid a partir das linhas imaginárias.
+    grid-row: 2 / 4; (exemplo) Atalho para o grid-row-start e end. Começa na linha 2 e termina na linha 4.
+    grid-column-start; Determina onde o elemento começa na grid a partir das linhas imaginárias.
+    grid-column-end; Determina onde o elemento termina na grid a partir das linhas imaginárias.
+    grid-column: 1 / 3; (exemplo) Atalho para o grid-column-start e end. Começa na coluna 1 e termina na coluna 3.
+        pode ser usado 1 / span 3 (exemplo), assim o elemento começará na linha imaginária 1 e irá até preencher o terceiro elemento.
+        -1 pode ser usado pra preencher até o final.
+    grid-template-areas; serve para nomear os cubos da grid.
+    grid-auto-rows; define um tamanho para todas as linhas da grid, independente de quantas tiverem.
+
+    Usos diversos:
+        auto-fill; se sobrar espaço, cria colunas vazias e as reserva.
+        auto-fit; ajusta os elementos para caberem na grid.
+        mixmax(); define um valor mínimo e máximo.
+
+z-index; define a ordem de sobreposição dos elementos.
+
+object-fit; pode ser usado para redimensionar imagens.

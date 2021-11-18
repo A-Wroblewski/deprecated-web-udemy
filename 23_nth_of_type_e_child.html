@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div p:nth-of-type(3){
+                color: red;
+            }
+
+            .destaque{
+                background-color: #ccc;
+            }
+
+            .destaque:nth-of-type(6){
+                color: green;
+            }
+
+            .destaque:first-child{
+                color: blue;
+            }
+
+            p:last-child{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="destaque">meu parágrafo</p>
+            <p>meu parágrafo</p>
+
+            <hr>
+
+            <p class="destaque">meu parágrafo</p>
+            <p>meu parágrafo</p>
+
+            <hr>
+
+            <p>meu parágrafo</p>
+            <p class="destaque">meu parágrafo</p>
+
+            <hr>
+
+            <p>meu parágrafo</p>
+            <p>meu parágrafo</p>
+        </div>
+    </body>
+</html>

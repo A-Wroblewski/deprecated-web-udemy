@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Lógica de programação</h1>
+
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
+
+        <div id="saida"></div>
+
+        <script>
+            function somar(){
+                var soma = parseFloat(prompt("Digite um número: "));
+         
+                numero += soma;
+                armazenar();
+            }
+
+            function subtrair(){
+                var subtrai = parseFloat(prompt("Digite um número: "));
+         
+                numero -= subtrai;
+                armazenar();
+            }
+
+            function multiplicar(){
+                var multiplica = parseFloat(prompt("Digite um número: "));
+         
+                numero *= multiplica;
+                armazenar();
+            }
+
+            function dividir(){
+                var divide = parseFloat(prompt("Digite um número: "));
+         
+                numero /= divide;
+                armazenar();
+            }
+
+            function armazenar(){
+                
+                var saida = document.querySelector("#saida");
+                
+                saida.innerHTML = numero;
+            }
+            
+            var numero = parseFloat(prompt("Digite um número: "));
+
+            armazenar();
+        </script>
+    </body>
+</html>

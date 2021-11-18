@@ -1,0 +1,178 @@
+<!DOCTYPE html>indica pro browser que é html.
+
+    <html>engloba todo o conteúdo da página</html>
+
+        <head>cabeçalho(título, metadados e links externos)</head>
+
+            <link>inclui outros documentos(somente na head).
+            Exemplo: <link rel="stylesheet" href="local do arquivo">
+
+            <meta>inclui informações como caracteres aceitos, autor, palavras-chave, etc(somente na head).
+
+            <title>título da página(na busca e na aba)</title>
+
+        <body>envolve o conteúdo visto pelo usuário</body>
+
+            <header>cabeçalho da página</header>
+
+            <img>imagem.
+
+            <img src="" alt=""> link da imagem e texto.
+
+            <!--comentários-->
+
+            <h1>título: h1(maior) até h6(menor) aplicados com hierarquia</h1>
+
+            <p>parágrafo</p>
+
+            <u>sublinhado</u>
+
+            <i>itálico</i>
+
+            <em>itálico semântico(enfatizar relacionado ao conteúdo)</em>
+
+            <b>negrito</b>
+
+            <strong>negrito semântico(enfatizar relacionado ao conteúdo)</strong>
+
+            <sup>texto superescrito(em cima). Pode ser usado como notas.</sup>
+
+            <sub>texto subescrito(embaixo). Pode ser usado como fórmulas químicas.</sub>
+
+            <ul>
+                lista não ordenada(sem números).
+                <li>item da lista</li>
+            </ul>
+
+            <ol>
+                lista ordenada(com números).
+                <li>item da lista</li>
+            </ol>
+
+            <a>link</a>
+
+            href="": destino do link(="#" cria um link falso).
+
+            target="": direciona o link("_blank" abre numa nova aba vazia).
+
+            <br>quebra linha.
+
+            <hr>quebra linha com uma linha horizontal depois da quebra.
+
+            <pre>texto contendo todos os espaços e quebras. Pode ser usado para colocar um código na página.</pre>
+
+            <address>informações do autor da página</address>
+
+            <blockquote cite="">faz uma citação grande de outro lugar</blockquote>
+
+            <q cite="">faz uma citação menor</q>
+
+            <div>não faz nada naturalmente, apenas ajuda na estilização.</div>
+
+            <abbr title="">informa uma abreviação</abbr>
+
+            <kbd>informa uma tecla do teclado</kbd>
+
+            <time>informa datas e horários</time>
+                exemplo: <time datetime="ano-mês-diaThora:minuto-03:00">T serve para separar o dia da hora e o -03:00 para informar horário brasileiro.</time>
+
+            <del>indica texto que foi removido</del>
+
+            <ins>indica texto inserido</ins>
+
+            <span>mesma coisa da div, porém é elemento de linha e não bloco.</span>
+
+            <dl>lista de definição</dl>
+                <dt>termo a ser definido</dt>
+                <dd>descrição do termo</dd>
+
+            <table>cria uma tabela</table>
+                <caption>acessibilidade</caption>
+                <thead>cabeçalho da tabela</thead>
+                    <tr>table row; linha da tabela</tr>
+                        <th>parte de cima da tr</th>
+                        <td>table data; dados da tabela</td>
+                            colspan="num"; define quantas colunas cada dado ocupa.
+                            rowspan="num"; define quantas linhas cada dado ocupa.
+                <tfoot>rodapé da table</tfoot>
+                <tbody>corpo da tabela</tbody>
+
+            <form>formulário</form>
+                action; url para onde as informações seram enviadas.
+                method; seleciona o método que as informações são enviadas.
+                    GET; na url|POST; escondido em algum lugar que eu não sei.
+                <fieldset>agrupa elementos relacionados no formulário com um quadrado</fieldset>
+                    <legend>diz o que tal parte do formulário é</legend>
+                    <label>etiqueta para dizer o que deve ser digitado</label>
+                        for=""; pode relacionar com o id do input.
+                    <input>entrada de dados.
+                        type=""; define o tipo do dado digitado.
+                            email; usado para emails(semântico).
+                            radio; marcar bolinha.
+                            submit; envia as informações.
+                            button; faz um botão.
+                            reset; reseta as informações.
+                            number; aceita apenas números.
+                            text; aceita qualquer tipo de texto.
+                            date; datas com calendário.
+                            range; permite o controle de algo com números min e max.
+                            url; aceita urls.
+                            time; faz um relógio.
+                            color; cores.
+                            checkbox; marcar caixinha.
+                                checked; checa automaticamente ao abrir a janela.
+                            file; aceita arquivos do pc.
+                                accept=""; tipos de arquivo aceitos.
+                            hidden; esconde informações do usuário.
+                            tel; telefone.
+                        name=""; da um nome pros valores das tags.
+                            É necessário ter o mesmo nome no back-end.
+                        id=""; usado pra relacionar o input com uma label.
+                        value=""; valor enviado para o servidor ou para ser selecionado.
+                        min="" e max=""; valores mínimo e máximo.
+                        autofocus; foco automático ao abrir a janela.
+                        required; não da para prosseguir até cumprir o requisito.
+                        maxlength; comprimento máximo.
+                        step; escolhe de quanto em quanto os números avançam(0.2|0.5|2).
+                        pattern; cria um padrão para a digitação([0-9]{11}).
+                        placeholder; dica pro usuário digitar.
+                        size; define o limite máximo em números(size="10").
+                    <select>faz opções para serem selecionadas</select>
+                        multiple; pode selecionar mais de uma.
+                        <option>opção do select</option>
+                    <textarea>caixa de texto</textarea>
+                        cols=""; número de colunas.
+                        rows=""; número de linhas.
+                        readonly; mesma aparência porém não é possível editar.
+                        disabled; desabilita a caixa para edições e muda a cor.
+
+            <button>botão</button>
+                onclick=""; acontece algo quando clica. Pode ser usado junto com JS.
+
+            <iframe src="">incorpora conteúdo de outros lugares</iframe>
+
+            <figure>engloba conteúdo que apesar de estar relacionado com o conteúdo da página, não há importância na sua posição</figure>
+                <figcaption>adiciona uma legenda</figcaption>
+
+            <audio>insere audios na página</audio>
+            <video>insere vídeos na página</video>
+                atributos para ambos: controls; exibe os controles.
+                                      autoplay; assim que a página carrega começa a tocar. Alguns navegadores bloqueiam essa opção.
+                                      muted; pode ser juntado com o autoplay, porém inicia sem som.
+                                      loop; assim que terminar ele recomeça.
+                <source src="" type=""> recebe os arquivos.
+                    exemplo: <source src="arquivo" type="audio/mp3">
+                    exemplo: <source src="arquivo" type="video/mp4">
+
+            <picture>coloca várias imagens para vários tamanhos de tela</picture>
+                modelo: <source media="" sizes="" srcset="">
+                        <source sizes="" srcset="">
+                        <img src="">
+                    exemplo: <source media="(min-width: 480px)" sizes="33.33vw" srcset="arquivo 800w, arquivo 640w...">
+                             <source sizes="100vw" srcset="arquivo 720w, arquivo 560w...">
+                             <img src="arquivo">
+
+                             sizes; controla o tamanho da imagem de acordo com a tela. Por exemplo, 33.33vw irá ocupar um terço da tela.
+                             srcset; após o arquivo, colocar a largura em pixels. Por exemplo, um arquivo com 600 de largura deve ser alertado com 600w após o link.
+
+            <footer>rodapé da página</footer>

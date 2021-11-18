@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="alvão">
+        <meta name="description" content="descrição">
+        <meta name="keywords" content="HTML, tecnologia">
+    </head>
+    <body>
+        <h1>Outro formuliço</h1>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label>Email</label>
+                <input type="email" required maxlength="5">
+
+                <br>
+
+                <label>Número de filhos</label>
+                <input type="number" min="0" max="100" step="0.5">
+
+                <br>
+
+                <label>Nascimento</label>
+                <input type="date" min="2018-01-30" max="2138-01-30">
+
+                <br>
+
+                <p>Sexo:</p>
+
+                <label>
+                    <input type="radio" name="sexo" value="M">Masculino
+                </label>
+
+                <label>
+                    <input type="radio" name="sexo" value="F">Feminino
+                </label>
+
+                <br>
+
+                <label>Estado</label>
+                <select name="estado">
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de interesse</legend>
+
+                <label>
+                    <input type="checkbox" name="html" value="html">HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="css" value="css">CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="js" value="js">Javascript
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+
+                <textarea style="resize: none;" name="msg" cols="30" rows="10"></textarea>
+
+                <br>
+
+                <textarea style="resize: none;" name="contato" cols="30" rows="10" disabled>Contrato gigante aqui</textarea>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" checked>Li e aceito
+                </label>
+
+                <br>
+
+                <label for="arquivo">Selecione um arquivo</label>
+                <input type="file" id="arquivo" accept=".exe">
+
+                <br>
+
+                <input type="hidden" name="id" value="123">
+
+                <br>
+
+                <label>Digite o tefelone</label>
+                <input type="tel" pattern="[0-9]{11}">Exemplo: 11912345678
+
+                <br>
+
+                <label>Digite a url</label>
+                <input type="url" placeholder="https://" pattern="https://.">
+
+                <br>
+
+                <input type="range" min="0" max="10" step="0.2">
+                <input type="time">
+                <input type="color">
+
+                <br>
+
+                <select multiple size="3">
+                    <option>opção 1</option>
+                    <option>opção 2</option>
+                    <option>opção 3</option>
+                    <option>opção 4</option>
+                    <option>opção 5</option>
+                </select>
+
+                <br>
+
+                <input type="submit" value="enviar">
+                <input type="button" value="botão">
+                <input type="reset" value="resetar">
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Cálculo da área de um retângulo</h1>
+
+        <button onclick="area(largura, altura)">Calcular área</button>
+        
+        <script>
+            var largura = parseFloat(prompt("Digite a largura: "));
+
+            var altura = parseFloat(prompt("Digite a altura: "));
+
+            function area(largura, altura){
+                alert("Área do retângulo: " + (largura * altura));
+            }
+        </script>
+    </body>
+</html>

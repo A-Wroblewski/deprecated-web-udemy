@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Lógica de programação</h1>
+
+        <script>
+            var bissexto = 1000;
+
+            while(bissexto <= 2000){
+                if(!(bissexto % 100 == 0) || (bissexto % 400 == 0))
+                    document.write(bissexto + "<br>")
+
+                bissexto += 4;
+            }
+        </script>
+    </body>
+</html>

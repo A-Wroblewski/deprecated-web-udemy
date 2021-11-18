@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .gridContainer, .gridContainer2, .gridContainer3, .gridContainer4, .gridContainer5, .gridContainer6{
+                width: 300px;
+                background-color: #ccc;
+            }
+
+            .gridItem{
+                background-color: #999;
+                font-size: 2em;
+                font-family: sans-serif;
+            }
+
+            .gridItem:nth-child(even){
+                background-color: #999;
+                color: white;
+            }
+
+            .gridItem:nth-child(odd){
+                background-color: #eee;
+            }
+
+            .gridContainer{
+                display: grid;
+                grid-template-columns: 100px 100px 100px 100px;
+                grid-template-rows: 100px 100px 100px;
+            }
+
+            .gridContainer2{
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px;
+            }
+
+            .gridContainer3{
+                display: grid;
+                grid-template-columns: repeat(3, 100px) 200px;
+                grid-template-rows: 100px 100px;
+            }
+
+            .gridContainer4{
+                display: grid;
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: 100px 100px;
+                /*grid-row-gap: 20px;
+                grid-column-gap: 20px;*/
+                grid-gap: 20px 20px;
+            }
+
+            .gridContainer5{
+                display: grid;
+                grid-template-columns: 100px 1fr 2fr;
+                grid-template-rows: 100px 100px;
+                grid-gap: 20px 20px;
+            }
+
+            .gridContainer6{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px 100px;
+                grid-gap: 20px 20px;
+            }
+
+            .gridItem2{
+                background-color: #999;
+                font-size: 2em;
+                font-family: sans-serif;
+            }
+
+            .gridItem2:nth-child(even){
+                background-color: #999;
+                color: white;
+            }
+
+            .gridItem2:nth-child(odd){
+                background-color: #eee;
+            }
+
+            .gridItem2:nth-child(1){
+                background-color: red;
+                /*grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 3;
+                grid-column-end: 4;*/
+                grid-row: 1 / 2;
+                grid-column: 3 / 4;
+            }
+
+            .gridItem2:nth-child(2){
+                background-color: red;
+                grid-row: 1 / 3;
+            }
+
+            .gridItem2:nth-child(6){
+                background-color: red;
+                grid-column: 1 / span 3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Grid Layout</h1>
+        
+        <div class="gridContainer">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+
+        <hr>
+
+        <div class="gridContainer2">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+
+        <hr>
+
+        <div class="gridContainer3">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+
+        <hr>
+
+        <div class="gridContainer4">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+
+        <hr>
+
+        <div class="gridContainer5">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+
+        <hr>
+
+        <div class="gridContainer6">
+            <div class="gridItem2">1</div>
+            <div class="gridItem2">2</div>
+            <div class="gridItem2">3</div>
+            <div class="gridItem2">4</div>
+            <div class="gridItem2">5</div>
+            <div class="gridItem2">6</div>
+        </div>
+    </body>
+</html>

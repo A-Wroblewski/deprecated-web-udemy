@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                border: 3px solid red;
+                padding: 25px;
+                position: relative;
+                margin: 25px;
+            }
+
+            div::before{
+                content: "before: ";
+                background-color: #ccc;
+            }
+
+            div::after{
+                content: "";
+                background-color: red;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Texto principal da div.</div>
+
+        <article>
+            <h3>Título</h3>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+        </article>
+
+        <ul>
+            <li><a href="#">Link falseta.</a></li>
+            <li><a href="#">Link falseta.</a></li>
+            <li><a href="http://google.com">Link externo.</a></li>
+            <li><a href="http://google.com/qq.pdf">Link externo.</a></li>
+            <li><a href="ex18.html" title="exercício anterior">Link interno.</a></li>
+        </ul>
+    </body>
+</html>

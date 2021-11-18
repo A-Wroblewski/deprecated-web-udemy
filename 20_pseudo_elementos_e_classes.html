@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            article:nth-child(1) a{
+                color: red;
+            }
+
+            article:nth-child(3) > p{
+                color: red;
+            }
+
+            article:nth-child(5) h3 + p{
+                color: red;
+                margin-top: 50px;
+            }
+
+            article:nth-child(7) h3 ~ p{
+                color: red;
+            }
+
+            article:not(.destaque){
+                color: orange;
+            }
+
+            .destaque{
+                background-color: yellow;
+            }
+
+            a[href="#"]{
+                opacity: .2;
+            }
+
+            a[href^="http"]{
+                color: red;
+            }
+
+            a[title]{
+                color: green;
+            }
+
+            a[href$=".pdf"]{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <h3>Título</h3>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>Título</h3>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>Título</h3>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>Título</h3>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article class="destaque">
+            <h3>Título</h3>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+            <p>Parágrafo. <a href="#">Link com <b>negrito</b></a></p>
+        </article>
+
+        <ul>
+            <li><a href="#">Link falseta.</a></li>
+            <li><a href="#">Link falseta.</a></li>
+            <li><a href="http://google.com">Link externo.</a></li>
+            <li><a href="http://google.com/qq.pdf">Link externo.</a></li>
+            <li><a href="ex18.html" title="exercício anterior">Link interno.</a></li>
+        </ul>
+    </body>
+</html>

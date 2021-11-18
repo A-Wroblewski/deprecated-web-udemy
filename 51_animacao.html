@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @keyframes andar{
+                0%{
+                    transform: translate(0);
+                    background-color: yellow;
+                }
+                25%, 75%{
+                    height: 80px;
+                }
+                100%{
+                    transform: translate(400px);
+                    background-color: blue;
+                }
+            }
+
+            #animação div{
+                width: 100px;
+                height: 50px;
+                border: 2px solid red;
+            }
+
+            #animação div:nth-child(1){
+                animation-name: andar;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                /*animation: andar 2s ease-out; mesma coisa*/
+            }
+
+            #animação div:nth-child(2){
+                animation-name: andar;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                /*animation: andar 2s ease-out infinite alternate; mesma coisa*/
+            }
+
+            #animação div:nth-child(3){
+                animation-name: andar;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                /*animation: andar 2s ease-out 2s infinite alternate;*/
+            }
+
+            #animação div:nth-child(4){
+                background-color: red;
+                animation-name: andar;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-delay: 1s;
+                animation-iteration-count: 2;
+                animation-direction: reverse;
+                animation-fill-mode: both;
+            }
+
+            #animação div:nth-child(5){
+                background-color: red;
+                animation-name: andar;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: reverse;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+
+            #animação div:nth-child(5):hover{
+                animation-play-state: paused;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Animações</h1>
+
+        <p>Atalho -> animation: name duration timing-function delay iteration-count direction fill-mode play-state.</p>
+
+        <div id="animação">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </body>
+</html>

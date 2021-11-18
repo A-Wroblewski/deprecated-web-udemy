@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .gridContainer{
+                width: 90%;
+                background: #ccc;
+                margin: 30px auto;
+            }
+
+            .gridItem{
+                background-color: orange;
+                padding: 15px;
+                font-family: sans-serif;
+            }
+
+            .gridContainer{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px 50px 1fr 50px;
+                grid-gap: 20px;
+                grid-template-areas: ".      header header"
+                                     "nav    nav    aside"
+                                     "main   main   aside"
+                                     "footer footer aside";
+            }
+
+            .header{
+                grid-area: header;
+            }
+
+            .nav{
+                grid-area: nav;
+            }
+
+            .aside{
+                grid-area: aside;
+            }
+
+            .main{
+                grid-area: main;
+                min-height: 200px;
+            }
+
+            .footer{
+                grid-area: footer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Grid Layout</h1>
+        
+        <div class="gridContainer">
+            <header class="header gridItem">header</header>
+
+            <nav class="nav gridItem">nav</nav>
+
+            <aside class="aside gridItem">aside</aside>
+
+            <main class="main gridItem">main</main>
+            
+            <footer class="footer gridItem">footer</footer>
+        </div>
+    </body>
+</html>

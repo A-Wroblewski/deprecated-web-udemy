@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="alvão">
+        <meta name="description" content="descrição">
+        <meta name="keywords" content="HTML, tecnologia">
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            td{
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            table{
+                border-collapse: collapse;
+                width: 50%;
+                margin: auto;
+                background-color: lightgray;
+                text-align: center;
+            }
+
+            th{
+                background-color: yellowgreen;
+                border: 1px solid green;
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Tabela de preços de cursos</caption>
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Curso</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Valores sujeitos à alterações.</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Design</td>
+                    <td>Paint</td>
+                    <td rowspan="5">R$1.000,00</td>
+                </tr>
+                <tr>
+                    <td>Photoshop</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">TI</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

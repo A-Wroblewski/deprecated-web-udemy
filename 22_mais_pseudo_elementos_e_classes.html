@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input[type="checkbox"]{
+                width: 100px;
+                height: 100px;
+            }
+
+            input[type="checkbox"]:checked{
+                width: 150px;
+                height: 150px;
+            }
+
+            button:disabled{
+                background-color: green;
+            }
+
+            p{
+                color: red;
+            }
+
+            p:empty:before{
+                content: "parágrafo vazio";
+            }
+
+            input[type="text"]:focus{
+                background-color: #ccc;
+            }
+
+            input[type="text"]:read-only{
+                background-color: yellow;
+            }
+
+            a:focus, a:hover, div:focus{
+                background-color: red;
+            }
+
+            input::placeholder{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <label>
+            <input type="checkbox" value="sim">Aceito o contrato.
+        </label>
+
+        <button>vai</button>
+        <button disabled>volta</button>
+
+        <p>parágrafo 1</p>
+        <p> </p>
+        <p></p>
+
+        <hr>
+
+        <input type="text">
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor inicial" readonly>
+        <input type="text" value="valor inicial" disabled>
+        <input type="text" placeholder="valor do placeholder">
+
+        <ul>
+            <li><a href="#">link falseta</a></li>
+            <li><a href="#">link falseta</a></li>
+            <li><a href="#">link falseta</a></li>
+        </ul>
+
+        <div tabindex="1">div 1</div>
+        <div tabindex="2">div 2</div>
+        <div tabindex="3">div 3</div>
+        <div tabindex="5">div 4</div>
+        <div tabindex="4">div 5</div>
+    </body>
+</html>

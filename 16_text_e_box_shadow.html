@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="alvão">
+        <meta name="description" content="descrição">
+        <meta name="keywords" content="HTML, tecnologia">
+        <style>
+            html{
+                height: 100%;
+            }
+
+            body{
+                background-color: gray;
+                background-image: linear-gradient(90deg, red 20%, blue 200px, blue 300px, transparent 300px, transparent 40%, yellow 550px, yellow 600px, green 620px, green 670px, purple 700px, transparent 800px), url(../Exercícios/Exercício\ 6/imagens/card_02.jpg);
+            }
+
+            #radius1{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 50%;
+                float: left;
+            }
+
+            #radius2{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 100px;
+                float: left;
+                margin: 50px;
+                box-shadow: 15px 10px 5px green;
+            }
+
+            #radius3{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 30px;
+                float: left;
+                box-shadow: -15px -10px 0 20px green;
+            }
+
+            #radius4{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 100px 50px 20px 0;
+                float: left;
+                margin: 50px;
+                box-shadow: 15px -10px 10px -10px green;
+            }
+
+            #radius5{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 100px 50px 20px 0 / 50px 100px 20px 0;
+                float: left;
+                box-shadow: 15px 10px 0 green, 20px 10px 10px 10px blue, -15px 10px 5px 20px red;
+            }
+
+            #radius6{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 50px 100px / 100px 50px;
+                float: left;
+                margin: 50px;
+            }
+
+            h1{
+                font-family: sans-serif;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: -1px 1px 0 yellow, -2px 2px 0 green, -3px 3px 0 red, -4px 4px 0 blue, -5px 5px 0 purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Efeitos CSS</h1>
+
+        <div id="radius1"></div>
+        <div id="radius2"></div>
+        <div id="radius3"></div>
+        <div id="radius4"></div>
+        <div id="radius5"></div>
+        <div id="radius6"></div>
+    </body>
+</html>

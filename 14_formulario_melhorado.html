@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="alvão">
+        <meta name="description" content="descrição">
+        <meta name="keywords" content="HTML, tecnologia">
+        <style>
+            .loginFormulario{
+                width: 250px;
+                margin: auto;
+                font-family: sans-serif;
+            }
+
+            fieldset{
+                background-color: greenyellow;
+            }
+
+            legend{
+                font-size: 22px;
+                background-color: khaki;
+            }
+
+            label{
+                margin-top: 15px;
+                display: block;
+            }
+
+            #usuario, #senha, .botao{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px;
+                font-size: 18px;
+                border: none;
+            }
+
+            #usuario{
+                margin-bottom: 15px;
+            }
+
+            #usuario:focus, #senha:focus{
+                background-color: khaki;
+            }
+
+            .botao{
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Outro formuliço</h1>
+        <form action="#" method="POST" class="loginFormulario">
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="usuario">Digite seu usuário:</label>
+                <input type="text" id="usuario" name="usuario" autofocus>
+
+                <label for="senha">Digite sua senha:</label>
+                <input type="password" id="senha" name="senha">
+
+                <input type="submit" value="Logar" class="botao">
+            </fieldset>
+        </form>
+    </body>
+</html>
