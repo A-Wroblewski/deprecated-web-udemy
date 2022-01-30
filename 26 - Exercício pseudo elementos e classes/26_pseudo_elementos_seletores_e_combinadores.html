@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            a[target="_blank"]::after{
+                content: url(Ícones/299638-200.png);
+                display: inline-block;
+                margin-left: 5px;
+            }
+
+            a[href$=".pdf"]::before{
+                content: url(Ícones/120px-Crystal_Clear_mimetype_pdf.png);
+                display: inline-block;
+                margin-right: 5px;
+            }
+
+            .check{
+                display: inline-block;
+                border: 2px solid #bbb;
+                background-color: #ddd;
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+            }
+
+            label{
+                height: 15px;
+                display: inline-block;
+            }
+
+            input[type="checkbox"]{
+                width: 0;
+                overflow: hidden;
+                visibility: hidden;
+                display: inline-block;
+                margin: 0;
+            }
+
+            input[type="checkbox"]:checked + label .check{
+                background-color: #777;
+                position: relative;
+            }
+            
+            input[type="checkbox"]:checked + label .check::before{
+                content: "";
+                display: block;
+                position: absolute;
+                border: 2px solid white;
+                top: 0;
+                bottom: 2px;
+                left: 3px;
+                right: 2px;
+                transform: rotate(45deg);
+                border-top-color: transparent;
+                border-left-color: transparent;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="http://google.com" target="_blank">link externo</a>
+
+        <br>
+
+        <a href="qq.pdf">download PDF</a>
+
+        <hr>
+
+        <input type="checkbox" name="qq" id="check">
+
+        <label for="check">
+            <span class="check"></span>Li e aceito
+        </label>
+    </body>
+</html>
