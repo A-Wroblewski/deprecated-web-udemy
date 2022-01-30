@@ -1,0 +1,339 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(160, 160, 160);
+    line-height: 1.5;
+}
+
+a{
+    transition: color 0.3s linear, border 0.3s linear;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #49bf9d;
+}
+
+a:hover{
+    border-bottom-color: transparent;
+}
+
+p{
+    margin: 0 0 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 15px;
+}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: 0.5em 0 0.5em 1.5em;
+}
+
+code{
+    background-color: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: 0.9em;
+    padding: 0.25em 0.65em;
+    font-family: "courier new", monospace;
+    color: #929292;
+}
+
+pre code{
+    display: block;
+    overflow: auto;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.ul-alternate{
+    list-style-type: none;
+}
+
+.ul-alternate li{
+    border-bottom: 2px solid #d8d8d8;
+}
+
+.ul-alternate li:last-child{
+    border: none;
+}
+
+.ul-icons li{
+    list-style-type: none;
+    display: inline;
+    font-size: 2em;
+    padding: 0 10px 0 0;
+    color: #49bf9d;
+}
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 100px 60px 50px;
+    background-image: url(imagens/overlay.png), url(imagens/bg.jpg);
+    background-position: center top;
+    background-size: auto, cover;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.main-header-title{
+    font-size: 22px;
+    color: white;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main-header-title strong{
+    color: white;
+    font-weight: normal;
+}
+
+.main-header-title a{
+    color: inherit;
+}
+
+.main-header-title a:hover{
+    color: #49bf9d;
+}
+
+.main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 100px 60px 50px;
+    box-sizing: border-box;
+}
+
+.main-content-section p{
+    margin-bottom: 50px;
+}
+
+.main-content-recent-works p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.button-default{
+    background-color: #49bf9d;
+    border: 3px solid #49bf9d;
+    color: white;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    display: inline-block;
+    width: auto;
+}
+
+.button-default-big{
+    font-size: 1em;
+}
+
+.button-default-stroke{
+    background-color: white;
+    border-color: #efefef;
+    color: inherit;
+}
+
+.button-default-small{
+    font-size: 0.7em;
+}
+
+.button-default-full{
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-content-recent-works img{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-header-link img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-link{
+    border: none;
+}
+
+.col-half-third{
+    width: 65%;
+    float: left;
+}
+
+.cold-one-third{
+    width: 32%;
+    float: left;
+}
+
+.cold-one-third:nth-child(3n-1){
+    margin: 0 2%;
+}
+
+.gallery-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery-thumb img, .gallery-img img{
+    margin-bottom: 2%;
+}
+
+.row{
+    overflow: auto;
+}
+
+.col-half{
+    width: 49%;
+    float: left;
+}
+
+.cold-half:first-child{
+    margin-right: 1%;
+}
+
+.cold-half:last-child{
+    margin-left: 1%;
+}
+
+.table{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table td{
+    padding: 0.8em;
+}
+
+.table th{
+    background-color: #ccc;
+    padding: 0.8em;
+}
+
+.table tbody tr:first-child td{
+    border-top: 2px solid #666;
+}
+
+.table tbody tr:last-child td{
+    border-bottom: 2px solid #666;
+}
+
+.table tbody tr td{
+    border-bottom: 1px solid #ccc;
+}
+
+.table tbody tr:nth-child(even) td{
+    background-color: #ddd;
+}
+
+.table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{
+    border: 1px solid #ccc;
+}
+
+input, label, textarea, select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 10em;
+}
+
+input, textarea, select{
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    margin-bottom: 15px;
+}
+
+input:focus, textarea:focus{
+    border: 3px solid #49bf9d;
+    outline: none;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+
+.img-left{
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.img-right{
+    float: right;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.main-footer ul{
+    list-style-type: none;
+}
+
+.icon-link{
+    border-bottom: 0;
+    color: #787878;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
