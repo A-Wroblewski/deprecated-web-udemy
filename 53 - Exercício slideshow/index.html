@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: black;
+            }
+
+            @keyframes slide{
+                0%, 22%, 100%{
+                    transform: translateY(0);
+                }
+                25%, 47%{
+                    transform: translateY(-50vh);
+                }
+                50%, 72%{
+                    transform: translateY(-100vh);
+                }
+                75%, 97%{
+                    transform: translateY(-150vh);
+                }
+            }
+
+            #externo{
+                border: 10px solid white;
+                width: 80vw;
+                height: 50vh;
+                margin: 20vh auto;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+
+            #interno img{
+                display: block;
+                height: 50vh;
+                width: 100%;
+                object-fit: cover;
+                animation: slide 10s infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="externo">
+            <div id="interno">
+                <img src="imagens/slide1.jpg" alt="">
+                <img src="imagens/slide2.jpg" alt="">
+                <img src="imagens/slide3.jpg" alt="">
+                <img src="imagens/slide4.jpg" alt="">
+            </div>
+        </div>
+    </body>
+</html>

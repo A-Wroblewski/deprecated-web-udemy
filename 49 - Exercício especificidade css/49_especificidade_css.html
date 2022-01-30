@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .jumbotron{
+                background-color: rgba(0, 0, 0, .5);
+            }
+
+            .jumbotron__title{
+                color: red;
+            }
+
+            .jumbotron__text{
+                color: white;
+            }
+
+            p{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Especificidade CSS</h1>
+
+        <div class="jumbotron">
+            <h2 class="jumbotron__title">subtítulo</h2>
+
+            <p class="jumbotron__text">parágrafo</p>
+            <p class="jumbotron__text">parágrafo</p>
+        </div>
+
+        <p style="color: blue;">com estilo inline</p>
+
+        <p lang="pt-br" class="teste">testando atributo</p>
+
+        <p class="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque quam, deserunt excepturi minus ad dolore quo debitis tempore, est eveniet voluptates amet harum laboriosam consequatur veniam mollitia. Eaque, impedit?</p>
+
+        <p class="teste" id="unico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque quam, deserunt excepturi minus ad dolore quo debitis tempore, est eveniet voluptates amet harum laboriosam consequatur veniam mollitia. Eaque, impedit?</p>
+
+        <p class="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque quam, deserunt excepturi minus ad dolore quo debitis tempore, est eveniet voluptates amet harum laboriosam consequatur veniam mollitia. Eaque, impedit?</p>
+
+        <h2>Tabela com ordem de sobreposição</h2>
+
+        <img src="tabela_css.png" style="width: 100%;">
+    </body>
+</html>
